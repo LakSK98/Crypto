@@ -1,0 +1,79 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "crypto_web_app_dbContext",
+   "ContextNamespace": "Data",
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": "Models",
+   "OutputContextPath": "Data",
+   "OutputPath": "Models",
+   "ProjectRootNamespace": "Crypto",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[AlertHistory]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AlertPackage]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[BlogPost]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[BlogPostComment]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[BlogPostLike]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Event]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Forum]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ForumFeed]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Login]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PriceTrack]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserAlertPackage]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "DESKTOP-IHHPCC7.crypto_web_app_db",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}
