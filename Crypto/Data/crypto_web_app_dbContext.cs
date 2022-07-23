@@ -25,6 +25,7 @@ namespace Crypto.Data
         public virtual DbSet<BlogPostLike> BlogPostLikes { get; set; }
         public virtual DbSet<Event> Events { get; set; }
         public virtual DbSet<Forum> Forums { get; set; }
+	public virtual DbSet<Question> Questions { get; set; }
         public virtual DbSet<ForumFeed> ForumFeeds { get; set; }
         public virtual DbSet<Login> Logins { get; set; }
         public virtual DbSet<PriceTrack> PriceTracks { get; set; }
@@ -299,6 +300,27 @@ namespace Crypto.Data
                     .HasForeignKey(d => d.BitUserId)
                     .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK__PriceTrac__BitUs__403A8C7D");
+            });
+
+	    modelBuilder.Entity<Question>(entity =>
+            {
+                entity.ToTable("Question");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.UId).HasColumnName("u_id");
+
+                entity.Property(e => e.QuestionDescription)
+                    .HasMaxLength(300)
+                    .IsUnicode(false)
+		    .HasColumnName("question");
+
+                entity.Property(e => e.Date).HasColumnName("date");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Questions)
+                    .HasForeignKey(d => d.UId)
+                    .HasConstraintName("FK_Question");
             });
 
             modelBuilder.Entity<UserAlertPackage>(entity =>

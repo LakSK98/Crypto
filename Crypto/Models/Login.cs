@@ -15,6 +15,7 @@ namespace Crypto.Models
             Events = new HashSet<Event>();
             ForumFeeds = new HashSet<ForumFeed>();
             Forums = new HashSet<Forum>();
+	    Questions = new HashSet<Question>();
             PriceTracks = new HashSet<PriceTrack>();
             UserAlertPackages = new HashSet<UserAlertPackage>();
         }
@@ -34,6 +35,7 @@ namespace Crypto.Models
         public virtual ICollection<Event> Events { get; set; }
         public virtual ICollection<ForumFeed> ForumFeeds { get; set; }
         public virtual ICollection<Forum> Forums { get; set; }
+	public virtual ICollection<Question> Questions { get; set; }
         public virtual ICollection<PriceTrack> PriceTracks { get; set; }
         public virtual ICollection<UserAlertPackage> UserAlertPackages { get; set; }
     }
